@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDataActivity">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="96dp"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="64dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="name: "/>
+
+    <TextView
+        android:id="@+id/tvResUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvUserName"
+        app:layout_constraintStart_toEndOf="@id/tvUserName"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Публикации"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvPosts"
+        app:layout_constraintStart_toEndOf="@id/tvPosts"
+        android:text="Подписчики"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvFollows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvPosts"
+        app:layout_constraintStart_toEndOf="@id/tvFollowers"
+        android:text="Подписки"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvResPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPosts"
+        app:layout_constraintStart_toStartOf="@id/tvPosts"
+        app:layout_constraintEnd_toEndOf="@id/tvPosts"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="11"/>
+
+    <TextView
+        android:id="@+id/tvResFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFollowers"
+        app:layout_constraintStart_toStartOf="@id/tvFollowers"
+        app:layout_constraintEnd_toEndOf="@id/tvFollowers"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="22"/>
+
+    <TextView
+        android:id="@+id/tvResFollows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFollows"
+        app:layout_constraintStart_toStartOf="@id/tvFollows"
+        app:layout_constraintEnd_toEndOf="@id/tvFollows"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="687"/>
+
+    <TextView
+        android:id="@+id/tvBiography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvPosts"
+        app:layout_constraintTop_toBottomOf="@id/tvResPosts"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="biography: "/>
+
+    <TextView
+        android:id="@+id/tvResBiography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvBiography"
+        app:layout_constraintStart_toEndOf="@id/tvBiography"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
